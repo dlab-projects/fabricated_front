@@ -1,0 +1,445 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{multirow}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{colortbl}
+\usepackage{tcolorbox}
+\usepackage{setspace}
+\onehalfspacing
+
+\definecolor{stigmacolor}{RGB}{234, 67, 53}
+\definecolor{footingcolor}{RGB}{66, 133, 244}
+\definecolor{boundarycolor}{RGB}{52, 168, 83}
+\definecolor{voicecolor}{RGB}{154, 66, 244}
+\definecolor{provcolor}{RGB}{251, 188, 5}
+\definecolor{investcolor}{RGB}{255, 136, 0}
+
+\newcommand{\codebox}[2]{%
+\begin{tcolorbox}[colback=#1!10, colframe=#1!80, title=\textbf{#2}, fonttitle=\bfseries\sffamily]
+}
+\newcommand{\endcodebox}{\end{tcolorbox}}
+
+\title{Goffmanian Coding Scheme for AI Use as Managed Attribute\\[0.5em]\large Inter-Rater Coding Protocol v2.0}
+\author{[Authors]}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+\newpage
+
+%==============================================================================
+\section{Overview}
+%==============================================================================
+
+This document provides a systematic coding scheme for analyzing interview transcripts through the lens of Goffman's dramaturgical framework, operationalized for the study of how professionals manage AI use as an interactional attribute in workplace settings. The scheme is designed to enable reliable inter-rater coding across three coders.
+
+\subsection{Analytical Framework}
+
+Our coding scheme is organized around two dimensions. The \textbf{primary dimension} captures three interactional dynamics---the Goffmanian mechanisms through which professionals navigate engagement opacity:
+
+\begin{enumerate}[leftmargin=*]
+\item \textbf{Stigma and Disclosure Management} \citep{goffman1963stigma}: How participants manage AI use as a potentially discreditable attribute, including:
+\begin{itemize}
+\item \textit{Passing}: Concealing AI use entirely
+\item \textit{Covering}: Minimizing the visibility of known AI use
+\item \textit{Strategic disclosure}: Controlled revelation to selected audiences
+\item \textit{Audience segregation}: Maintaining different disclosure practices for different audiences
+\item \textit{Stage shifting}: Movement between open and private use over time
+\end{itemize}
+
+\item \textbf{Footing and Authorship Claims} \citep{goffman1981forms}: How participants position themselves relative to AI-mediated output, drawing on the distinction among:
+\begin{itemize}
+\item \textit{Animator}: Who physically produces the utterance/output
+\item \textit{Author}: Who composes it
+\item \textit{Principal}: Whose position it establishes
+\end{itemize}
+
+\item \textbf{Boundary Work and Legitimation} \citep{goffman1959presentation}: How participants construct moral frameworks for distinguishing acceptable from unacceptable AI use, including:
+\begin{itemize}
+\item \textit{``Real work'' claims}: Asserting work is genuine despite AI involvement
+\item \textit{Moral distancing}: Distinguishing one's practice from stigmatized AI use
+\item \textit{Normalization}: Framing AI as ``just a tool''
+\item \textit{Evolving norms}: Recognizing that standards are in flux
+\end{itemize}
+\end{enumerate}
+
+The \textbf{secondary dimension} captures the substantive concerns that these dynamics operate on---what participants worry about when they manage AI use:
+
+\begin{enumerate}[leftmargin=*]
+\item \textbf{Voice concerns}: Anxieties about authentic self-expression, personal style, and authorial identity
+\item \textbf{Provenance concerns}: Worries about verification, accountability, epistemic defensibility, and disclosure
+\item \textbf{Investment concerns}: Concerns about effort indistinguishability, credit allocation, and skill erosion
+\end{enumerate}
+
+\subsection{Unit of Analysis}
+
+The primary unit of analysis is the \textbf{utterance cluster}: a coherent sequence of participant statements addressing a single topic or concern. Utterance clusters may span multiple conversational turns but should represent a thematically unified segment.
+
+Code each utterance cluster for \textit{all applicable} codes across both dimensions. Multiple codes from the same category and across categories may apply to a single cluster.
+
+\subsection{Coding Procedure}
+
+\begin{enumerate}[leftmargin=*]
+\item Read the full transcript to understand context
+\item Identify utterance clusters relevant to AI use
+\item For each cluster, first apply interactional dynamic codes (Section 2)
+\item Then apply substantive concern codes (Section 3)
+\item Record verbatim quote, code(s), and brief analytic memo
+\item Flag ambiguous cases for team discussion
+\end{enumerate}
+
+\newpage
+%==============================================================================
+\section{Interactional Dynamic Codes (Primary)}
+%==============================================================================
+
+These codes capture the three Goffmanian dynamics through which professionals navigate AI-mediated work. These are the primary analytical categories.
+
+%------------------------------------------------------------------------------
+\subsection{Stigma and Disclosure Management (STIG)}
+%------------------------------------------------------------------------------
+
+\begin{tcolorbox}[colback=stigmacolor!10, colframe=stigmacolor!80, title=\textbf{STIG: Stigma and Disclosure Management Codes}, fonttitle=\bfseries\sffamily]
+
+\textbf{Definition}: Discourse indicating management of AI use as a potentially discreditable attribute, including concealment, minimization, strategic revelation, and audience-specific disclosure practices.
+
+\vspace{0.5em}
+\begin{tabular}{@{}p{3.5cm}p{10cm}@{}}
+\toprule
+\textbf{Code} & \textbf{Description \& Indicators} \\
+\midrule
+STIG\_PASS & \textbf{Passing}. Concealing AI use to avoid stigma. Look for: ``they don't know I use AI,'' ``pass it off as my own,'' ``hide that AI helped,'' ``keep it quiet,'' ``secretly.'' \\[0.5em]
+STIG\_COVER & \textbf{Covering}. Minimizing visibility of known AI use. Look for: ``downplay how much,'' ``don't emphasize,'' ``keep it subtle,'' ``minimize,'' ``blend the work.'' \\[0.5em]
+STIG\_DISC & \textbf{Strategic disclosure}. Controlled revelation of AI use. Look for: ``I tell them I used AI,'' ``transparent about it,'' ``admit I used AI,'' ``disclose,'' ``mention AI.'' \\[0.5em]
+STIG\_SEG & \textbf{Audience segregation}. Different disclosure to different audiences. Look for: ``tell colleagues but not clients,'' ``boss doesn't know,'' ``some people know,'' ``depends who I'm talking to.'' \\[0.5em]
+STIG\_SHIFT & \textbf{Stage shifting}. Movement between open and private use over time. Look for: ``used to be open, now private,'' ``becoming more public,'' ``changing how I talk about it,'' ``didn't used to hide it.'' \\[0.5em]
+STIG\_NAME & \textbf{Explicit stigma naming}. Participant explicitly identifies stigma dynamic. Look for: ``stigma,'' ``judged,'' ``frowned upon,'' ``look down on,'' ``negative perception,'' ``falsely accused.'' \\[0.5em]
+STIG\_SAFE & \textbf{Safe disclosure context}. Participant reveals practice enabled by interview's non-consequential audience. Look for: candid admissions of concealed practices, confessional tone, explicit acknowledgment that interviewer context enables disclosure. \\
+\bottomrule
+\end{tabular}
+
+\vspace{0.5em}
+\textbf{Boundary condition}: Do NOT code routine descriptions of private tool use without disclosure concern. The participant must indicate awareness that AI use is or could be discrediting.
+\end{tcolorbox}
+
+\newpage
+%------------------------------------------------------------------------------
+\subsection{Footing and Authorship Claims (FOOT)}
+%------------------------------------------------------------------------------
+
+\begin{tcolorbox}[colback=footingcolor!10, colframe=footingcolor!80, title=\textbf{FOOT: Footing and Authorship Codes}, fonttitle=\bfseries\sffamily]
+
+\textbf{Definition}: Discourse indicating how participants position themselves relative to AI-generated content in terms of animator/author/principal distinctions, including claims to authorship, distancing from AI output, and negotiation of joint production.
+
+\vspace{0.5em}
+\begin{tabular}{@{}p{3.5cm}p{10cm}@{}}
+\toprule
+\textbf{Code} & \textbf{Description \& Indicators} \\
+\midrule
+FOOT\_CLAIM & \textbf{Principal claim}. Asserting ownership/endorsement despite AI involvement. Look for: ``I wrote,'' ``my work,'' ``my words,'' ``I created,'' ``my own ideas,'' ``my own hand,'' possessive markers around creative output. \\[0.5em]
+FOOT\_DIST & \textbf{Animator distancing}. Attributing production to AI while distancing from content. Look for: ``AI wrote it,'' ``it generated,'' ``the model produced,'' ``AI came up with,'' framing oneself as merely outputting AI text. \\[0.5em]
+FOOT\_BLEND & \textbf{Blended authorship}. Negotiating joint production that preserves authorial footing. Look for: ``I use AI to help,'' ``AI assisted me,'' ``collaborative,'' ``I directed AI,'' ``blend the work,'' ``starting point.'' \\[0.5em]
+FOOT\_SEG & \textbf{Task segmentation}. Maintaining footing by restricting AI to specific task zones. Look for: ``AI for research, I do the writing,'' ``only use it for X,'' ``the creative part is mine,'' role-based division of labor. \\[0.5em]
+FOOT\_AMBIG & \textbf{Footing ambiguity}. Uncertainty or oscillation about authorship attribution. Look for: ``not sure who wrote,'' ``hard to say,'' ``blend of me and AI,'' ``whose words are these,'' oscillation between claiming and disclaiming. \\[0.5em]
+FOOT\_SKILL & \textbf{Skill reassertion}. Reasserting expertise that AI threatens to obscure. Look for: ``it is a skill,'' ``AI can't do what I do,'' ``requires judgment,'' ``you still need expertise,'' competence claims following AI acknowledgment. \\
+\bottomrule
+\end{tabular}
+
+\vspace{0.5em}
+\textbf{Boundary condition}: Code only when participant explicitly or implicitly negotiates the question of who stands behind the work. Routine task descriptions without authorship orientation should NOT be coded.
+\end{tcolorbox}
+
+\newpage
+%------------------------------------------------------------------------------
+\subsection{Boundary Work and Legitimation (BOUND)}
+%------------------------------------------------------------------------------
+
+\begin{tcolorbox}[colback=boundarycolor!10, colframe=boundarycolor!80, title=\textbf{BOUND: Boundary Work and Legitimation Codes}, fonttitle=\bfseries\sffamily]
+
+\textbf{Definition}: Discourse constructing moral frameworks for distinguishing acceptable from unacceptable AI use, including ``real work'' claims, moral distancing, normalization, and evolving standards.
+
+\vspace{0.5em}
+\begin{tabular}{@{}p{3.5cm}p{10cm}@{}}
+\toprule
+\textbf{Code} & \textbf{Description \& Indicators} \\
+\midrule
+BOUND\_REAL & \textbf{``Real work'' framing}. Asserting work is genuine despite AI involvement. Look for: ``real work,'' ``genuine effort,'' ``actual contribution,'' ``authentic work,'' ``real art.'' \\[0.5em]
+BOUND\_CHEAT & \textbf{``Cheating'' framing}. AI use characterized as potentially illegitimate. Look for: ``cheating,'' ``not fair,'' ``gaming the system,'' ``shortcut,'' ``easy route,'' ``lazy.'' \\[0.5em]
+BOUND\_TOOL & \textbf{``Just a tool'' normalization}. Framing AI as neutral instrument. Look for: ``just a tool,'' ``like any other tool,'' ``same as using [calculator/Google/etc.],'' ``technology.'' \\[0.5em]
+BOUND\_MORAL & \textbf{Moral distancing}. Distinguishing one's practice from stigmatized AI use. Look for: ``that's different from,'' ``I don't do what they do,'' ``there's a line,'' ``not like those people who,'' dismissive comparisons. \\[0.5em]
+BOUND\_LEARN & \textbf{Learning/growth reframe}. Reframing AI use as educational rather than labor-saving. Look for: ``learning from it,'' ``helps me improve,'' ``teaching tool,'' ``shows me how to.'' \\[0.5em]
+BOUND\_POLICY & \textbf{Institutional framing}. Reference to organizational rules/norms as legitimation. Look for: ``policy,'' ``allowed,'' ``permitted,'' ``company says,'' ``client approves,'' ``rules about.'' \\[0.5em]
+BOUND\_EVOLVE & \textbf{Evolving norms}. Recognition that standards are changing. Look for: ``changing,'' ``evolving,'' ``new normal,'' ``didn't used to be,'' ``becoming acceptable,'' ``everyone does it now.'' \\
+\bottomrule
+\end{tabular}
+
+\vspace{0.5em}
+\textbf{Boundary condition}: Code when participant explicitly constructs a moral or normative framework around AI use. Simple preference statements (``I prefer to do it myself'') without moral framing should NOT be coded.
+\end{tcolorbox}
+
+\newpage
+%==============================================================================
+\section{Substantive Concern Codes (Secondary)}
+%==============================================================================
+
+These codes capture \textit{what} participants are concerned about---the diagnostic cues they understand to be at stake. Apply these codes alongside the interactional dynamic codes to specify the content of participants' concerns.
+
+%------------------------------------------------------------------------------
+\subsection{Voice Concerns (VOICE)}
+%------------------------------------------------------------------------------
+
+\begin{tcolorbox}[colback=voicecolor!10, colframe=voicecolor!80, title=\textbf{VOICE: Voice and Authenticity Concern Codes}, fonttitle=\bfseries\sffamily]
+
+\textbf{Definition}: Discourse indicating concern about AI filtering stance cues, personal voice, or authorial identity.
+
+\vspace{0.5em}
+\begin{tabular}{@{}p{3.5cm}p{10cm}@{}}
+\toprule
+\textbf{Code} & \textbf{Description \& Indicators} \\
+\midrule
+VOICE\_POSSESS & \textbf{Possessive voice/style claims}. Participant asserts ownership of voice, style, or personality. Look for: ``my voice,'' ``my style,'' ``my personality,'' ``my tone,'' ``my way of writing/speaking.'' \\[0.5em]
+VOICE\_SOUND & \textbf{``Sounds like me'' discourse}. Explicit concern about whether output sounds authentic. Look for: ``sounds like me,'' ``doesn't sound like me,'' ``sounds natural,'' ``sounds authentic.'' \\[0.5em]
+VOICE\_GENERIC & \textbf{Generic/robotic concern}. Output characterized as impersonal or machine-like. Look for: ``too generic,'' ``robotic,'' ``artificial,'' ``impersonal,'' ``bland,'' ``cookie-cutter,'' ``LinkedIn influencer.'' \\[0.5em]
+VOICE\_LOSE & \textbf{Voice loss anxiety}. Fear of losing personal voice through AI use. Look for: ``lose my voice,'' ``losing my style,'' ``voice getting lost,'' ``style disappearing.'' \\[0.5em]
+VOICE\_EDIT & \textbf{Editing to personalize}. Modifying AI output to restore personal markers. Look for: ``edit to sound like me,'' ``rewrite in my voice,'' ``tweak to my style,'' ``personalize.'' \\[0.5em]
+VOICE\_TOUCH & \textbf{``Human touch'' discourse}. Valuing human elements AI cannot provide. Look for: ``personal touch,'' ``human touch,'' ``human element,'' ``warmth,'' ``soul,'' ``personality.'' \\
+\bottomrule
+\end{tabular}
+
+\vspace{0.5em}
+\textbf{Boundary condition}: Do NOT code routine editing without personalization intent (e.g., ``I edit for grammar'').
+\end{tcolorbox}
+
+\newpage
+%------------------------------------------------------------------------------
+\subsection{Provenance Concerns (PROV)}
+%------------------------------------------------------------------------------
+
+\begin{tcolorbox}[colback=provcolor!10, colframe=provcolor!80, title=\textbf{PROV: Provenance and Accountability Concern Codes}, fonttitle=\bfseries\sffamily]
+
+\textbf{Definition}: Discourse indicating concerns about verification, accountability, epistemic defensibility, and the ability to trace and defend AI-assisted outputs.
+
+\vspace{0.5em}
+\begin{tabular}{@{}p{3.5cm}p{10cm}@{}}
+\toprule
+\textbf{Code} & \textbf{Description \& Indicators} \\
+\midrule
+PROV\_VERIFY & \textbf{Verification practice}. Checking AI output for accuracy. Look for: ``verify,'' ``check,'' ``validate,'' ``fact-check,'' ``double-check,'' ``confirm,'' ``Ctrl+F.'' \\[0.5em]
+PROV\_HALLUC & \textbf{Hallucination concern}. Awareness of AI fabrication risk. Look for: ``hallucinate,'' ``make things up,'' ``fabricate,'' ``invent,'' ``incorrect,'' ``inaccurate,'' ``misrepresented.'' \\[0.5em]
+PROV\_TRUST & \textbf{Trust/reliability discourse}. Concerns about trusting AI output. Look for: ``trust the output,'' ``rely on,'' ``reliable,'' ``can I trust,'' ``confidence in,'' ``not confident.'' \\[0.5em]
+PROV\_DEFEND & \textbf{Defend/explain concern}. Worry about ability to defend AI-assisted work. Look for: ``explain why,'' ``defend my work,'' ``justify,'' ``accountable,'' ``responsible for,'' ``stand behind.'' \\[0.5em]
+PROV\_SOURCE & \textbf{Source attribution}. Concerns about tracing information origins. Look for: ``where did this come from,'' ``source,'' ``citation,'' ``reference,'' ``provenance,'' ``follow the links.'' \\[0.5em]
+PROV\_ZONE & \textbf{Trust segmentation}. Restricting AI to domains where verification is tractable. Look for: ``only for [low-stakes tasks],'' ``not for important areas,'' hierarchy of trust across task types. \\
+\bottomrule
+\end{tabular}
+
+\vspace{0.5em}
+\textbf{Boundary condition}: PROV\_VERIFY is common and should be coded even for routine checking. Other PROV codes require more explicit engagement with accountability or epistemic defensibility.
+\end{tcolorbox}
+
+\newpage
+%------------------------------------------------------------------------------
+\subsection{Investment Concerns (INVEST)}
+%------------------------------------------------------------------------------
+
+\begin{tcolorbox}[colback=investcolor!10, colframe=investcolor!80, title=\textbf{INVEST: Investment and Effort Concern Codes}, fonttitle=\bfseries\sffamily]
+
+\textbf{Definition}: Discourse indicating concern about effort indistinguishability, credit allocation, skill atrophy, or AI dependence.
+
+\vspace{0.5em}
+\begin{tabular}{@{}p{3.5cm}p{10cm}@{}}
+\toprule
+\textbf{Code} & \textbf{Description \& Indicators} \\
+\midrule
+INVEST\_SHORT & \textbf{Shortcut/cheating discourse}. AI framed as illegitimate ease. Look for: ``shortcut,'' ``cheating,'' ``lazy,'' ``easy way out,'' ``taking the easy route,'' ``2 seconds.'' \\[0.5em]
+INVEST\_APPEAR & \textbf{Appearance of low effort}. Worry about appearing lazy or uncommitted. Look for: ``look lazy,'' ``seem like I'm cheating,'' ``appear incompetent,'' ``come across as not trying.'' \\[0.5em]
+INVEST\_CREDIT & \textbf{Credit/recognition concern}. Who deserves credit for AI-assisted work. Look for: ``credit,'' ``recognition,'' ``acknowledgment,'' ``attribution,'' ``who gets credit,'' ``as if I'm the artist.'' \\[0.5em]
+INVEST\_FAIR & \textbf{Fairness concern}. Whether AI use is fair advantage. Look for: ``fair,'' ``unfair advantage,'' ``level playing field,'' ``fairness.'' \\[0.5em]
+INVEST\_SKILL & \textbf{Skill concern}. Fear of losing or maintaining abilities. Look for: ``lose my skills,'' ``skills atrophy,'' ``getting worse at,'' ``maintain my skills,'' ``still do it myself,'' ``deskilling,'' ``crutch.'' \\[0.5em]
+INVEST\_DEPEND & \textbf{AI dependence concern}. Worry about over-reliance. Look for: ``depend on AI,'' ``reliance,'' ``crutch,'' ``can't do without,'' ``dependent,'' ``what if AI goes away.'' \\
+\bottomrule
+\end{tabular}
+
+\vspace{0.5em}
+\textbf{Boundary condition}: Distinguish INVEST\_SHORT (normative concern about legitimacy) from neutral descriptions of time savings.
+\end{tcolorbox}
+
+\newpage
+%==============================================================================
+\section{Coding Instructions}
+%==============================================================================
+
+\subsection{Step-by-Step Procedure}
+
+\begin{enumerate}[leftmargin=*]
+\item \textbf{First pass}: Read entire transcript without coding to grasp context
+\item \textbf{Segmentation}: Divide transcript into utterance clusters (thematically coherent segments)
+\item \textbf{Dynamic coding (primary)}: For each cluster, apply all applicable STIG, FOOT, BOUND codes. Ask: what is the participant \textit{doing} interactionally?
+\item \textbf{Concern coding (secondary)}: Apply all applicable VOICE, PROV, INVEST codes. Ask: what is the participant \textit{worried about} substantively?
+\item \textbf{Documentation}: Record:
+\begin{itemize}
+\item Transcript ID
+\item Cluster number
+\item Verbatim quote (key phrase or sentence)
+\item Dynamic code(s) applied
+\item Concern code(s) applied
+\item Brief analytic memo (1--2 sentences explaining coding rationale)
+\end{itemize}
+\item \textbf{Flagging}: Mark any uncertain cases with [?] for team discussion
+\end{enumerate}
+
+\subsection{Decision Rules}
+
+\begin{itemize}[leftmargin=*]
+\item \textbf{When in doubt, code}: It is easier to remove codes during reconciliation than to add them
+\item \textbf{Dynamics first}: Always code the interactional dynamic before the substantive concern. This ensures analytical priority remains on \textit{what participants are doing}, not just what they are talking about
+\item \textbf{Multiple codes}: Apply all applicable codes; do not force single-code decisions
+\item \textbf{Context matters}: Consider surrounding utterances when ambiguous
+\item \textbf{Explicit over implicit}: Prioritize explicit statements but code strong implicit signals
+\item \textbf{Convergence}: Note when multiple dynamics converge in a single cluster (e.g., boundary work serving footing claims while managing stigma)
+\item \textbf{Boundary cases}: When utterance is borderline, note the ambiguity in memo
+\end{itemize}
+
+\subsection{Reliability Protocol}
+
+\begin{enumerate}[leftmargin=*]
+\item \textbf{Training set}: All three coders independently code 10 transcripts
+\item \textbf{Reconciliation}: Meet to discuss disagreements and refine definitions
+\item \textbf{Reliability check}: Calculate Cohen's kappa on next 20 transcripts
+\item \textbf{Target}: $\kappa \geq .70$ for each code category before proceeding
+\item \textbf{Ongoing calibration}: Weekly meetings to discuss difficult cases
+\end{enumerate}
+
+\subsection{Recording Template}
+
+\begin{center}
+\begin{tabular}{|p{1.5cm}|p{1cm}|p{4.5cm}|p{2.5cm}|p{2cm}|p{3.5cm}|}
+\hline
+\textbf{Trans. ID} & \textbf{Clstr} & \textbf{Quote} & \textbf{Dynamic} & \textbf{Concern} & \textbf{Memo} \\
+\hline
+work\_0110 & 3 & ``People used to use it openly, now it's more private'' & STIG\_SHIFT, STIG\_NAME & --- & Temporal shift in norms; explicit stigma theorization \\
+\hline
+work\_0361 & 5 & ``I feel like I'm cheating a bit otherwise'' & FOOT\_BLEND, BOUND\_CHEAT & INVEST\_SHORT & Footing crisis; ``cheating'' indexes investment anxiety \\
+\hline
+& & & & & \\
+\hline
+\end{tabular}
+\end{center}
+
+\newpage
+%==============================================================================
+\section{Code Summary Reference Card}
+%==============================================================================
+
+\small
+\begin{longtable}{@{}p{3cm}p{3cm}p{8.5cm}@{}}
+\toprule
+\textbf{Dimension} & \textbf{Code} & \textbf{Quick Definition} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Dimension} & \textbf{Code} & \textbf{Quick Definition} \\
+\midrule
+\endhead
+\midrule
+\multicolumn{3}{r}{\textit{Continued on next page}} \\
+\endfoot
+\bottomrule
+\endlastfoot
+
+\multicolumn{3}{l}{\textbf{\textit{Primary: Interactional Dynamics}}} \\
+\midrule
+\rowcolor{stigmacolor!20}
+Stigma/Disclosure & STIG\_PASS & Passing (concealing AI use) \\
+\rowcolor{stigmacolor!20}
+& STIG\_COVER & Covering (minimizing visibility) \\
+\rowcolor{stigmacolor!20}
+& STIG\_DISC & Strategic disclosure \\
+\rowcolor{stigmacolor!20}
+& STIG\_SEG & Audience segregation \\
+\rowcolor{stigmacolor!20}
+& STIG\_SHIFT & Stage shifting over time \\
+\rowcolor{stigmacolor!20}
+& STIG\_NAME & Explicit stigma naming \\
+\rowcolor{stigmacolor!20}
+& STIG\_SAFE & Safe disclosure context \\
+\midrule
+\rowcolor{footingcolor!20}
+Footing/Authorship & FOOT\_CLAIM & Principal claim (asserting ownership) \\
+\rowcolor{footingcolor!20}
+& FOOT\_DIST & Animator distancing \\
+\rowcolor{footingcolor!20}
+& FOOT\_BLEND & Blended authorship \\
+\rowcolor{footingcolor!20}
+& FOOT\_SEG & Task segmentation \\
+\rowcolor{footingcolor!20}
+& FOOT\_AMBIG & Footing ambiguity \\
+\rowcolor{footingcolor!20}
+& FOOT\_SKILL & Skill reassertion \\
+\midrule
+\rowcolor{boundarycolor!20}
+Boundary/Legitimation & BOUND\_REAL & ``Real work'' framing \\
+\rowcolor{boundarycolor!20}
+& BOUND\_CHEAT & ``Cheating'' framing \\
+\rowcolor{boundarycolor!20}
+& BOUND\_TOOL & ``Just a tool'' normalization \\
+\rowcolor{boundarycolor!20}
+& BOUND\_MORAL & Moral distancing \\
+\rowcolor{boundarycolor!20}
+& BOUND\_LEARN & Learning/growth reframe \\
+\rowcolor{boundarycolor!20}
+& BOUND\_POLICY & Institutional framing \\
+\rowcolor{boundarycolor!20}
+& BOUND\_EVOLVE & Evolving norms \\
+\midrule
+\multicolumn{3}{l}{\textbf{\textit{Secondary: Substantive Concerns}}} \\
+\midrule
+\rowcolor{voicecolor!20}
+Voice & VOICE\_POSSESS & Claims ownership of voice/style \\
+\rowcolor{voicecolor!20}
+& VOICE\_SOUND & ``Sounds like me'' concerns \\
+\rowcolor{voicecolor!20}
+& VOICE\_GENERIC & Output too generic/robotic \\
+\rowcolor{voicecolor!20}
+& VOICE\_LOSE & Fear of losing voice \\
+\rowcolor{voicecolor!20}
+& VOICE\_EDIT & Editing to personalize \\
+\rowcolor{voicecolor!20}
+& VOICE\_TOUCH & ``Human touch'' discourse \\
+\midrule
+\rowcolor{provcolor!20}
+Provenance & PROV\_VERIFY & Verification practice \\
+\rowcolor{provcolor!20}
+& PROV\_HALLUC & Hallucination concern \\
+\rowcolor{provcolor!20}
+& PROV\_TRUST & Trust/reliability discourse \\
+\rowcolor{provcolor!20}
+& PROV\_DEFEND & Defend/explain concern \\
+\rowcolor{provcolor!20}
+& PROV\_SOURCE & Source attribution \\
+\rowcolor{provcolor!20}
+& PROV\_ZONE & Trust segmentation \\
+\midrule
+\rowcolor{investcolor!20}
+Investment & INVEST\_SHORT & Shortcut/cheating discourse \\
+\rowcolor{investcolor!20}
+& INVEST\_APPEAR & Appearance of low effort \\
+\rowcolor{investcolor!20}
+& INVEST\_CREDIT & Credit/recognition concern \\
+\rowcolor{investcolor!20}
+& INVEST\_FAIR & Fairness concern \\
+\rowcolor{investcolor!20}
+& INVEST\_SKILL & Skill atrophy/maintenance \\
+\rowcolor{investcolor!20}
+& INVEST\_DEPEND & AI dependence concern \\
+
+\end{longtable}
+
+\end{document}
