@@ -30,21 +30,6 @@ What is included:
 
 See `data/README.md` for the column-level data dictionary.
 
-## Reproducing the results
-
-```bash
-python -m venv .venv && source .venv/bin/activate
-pip install -r requirements.txt
-```
-
-| Result | Script |
-|---|---|
-| Chi-squared tests on prevalence and behavioral orientation across groups (§4.1, §4.2) | `python code/analyze_opacity_labeling.py` |
-| Level × form analysis (supplementary) | `python code/analyze_opacity_level_form.py` |
-| Justification figure and §4.5 statistics | `python code/make_justifications_figure.py` |
-
-The LLM coding pipeline (GPT-5.4 → `opacity_labeling.csv`) and the activity clustering pipeline (GPT-5.4 → MPNet embeddings → k-means → cluster labelling) that produce the figures in §4 are not yet in this repository; they will be added in a subsequent commit.
-
 ## Citation
 
 If you use this dataset or code, please cite both the paper and the source corpus:
